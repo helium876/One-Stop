@@ -1,5 +1,7 @@
-<ion-view view-title="Map">
-  <ion-content>
-    <h1>Map</h1>
-  </ion-content>
-</ion-view>
+<ion-content scroll="false">
+    <map on-create="mapCreated(map)"></map>
+</ion-content>
+
+<ion-footer-bar class="bar-dark">
+  <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate"></a>
+</ion-footer-bar>

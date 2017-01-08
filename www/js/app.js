@@ -1,7 +1,8 @@
 angular.module('oneStop', [
   'ionic',
   'oneStop.controllers',
-  'oneStop.config'
+  'oneStop.config',
+  'oneStop.directives'
   ])
 
 .run(function($ionicPlatform) {
