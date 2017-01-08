@@ -2,7 +2,8 @@ angular.module('oneStop', [
   'ionic',
   'oneStop.controllers',
   'oneStop.config',
-  'oneStop.directives'
+  'oneStop.directives',
+  'ngCordova'
   ])
 
 .run(function($ionicPlatform) {
@@ -56,5 +57,5 @@ angular.module('oneStop', [
       }
     }
   });
-  $urlRouterProvider.otherwise('/app/auth');
+  $urlRouterProvider.otherwise('/app/map');
 });
