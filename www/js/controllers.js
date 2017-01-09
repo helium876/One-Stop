@@ -158,25 +158,16 @@ angular.module('oneStop.controllers', [
 
 	ref.on('value', function(snapshot) {
 		
-		// setMapOnAll(null);
 		$scope.childKey = snapshot.child($rootScope.uID).val();
 
 		var latLng = new google.maps.LatLng($scope.childKey.latitude, $scope.childKey.longitude);
 		try{
 			$scope.marker.setPosition(latLng);
+      $scope.map.setCenter(latLng);
 		}
 		catch(e){
 			
 		}
-		// $scope.marker = new google.maps.Marker({
-	 //          map: $scope.map,
-	 //          animation: google.maps.Animation.DROP,
-	 //          position: latLng,
-	 //          icon: {
-		// 	    url: 'img/mark.png',
-		// 	    scaledSize : new google.maps.Size(33, 42)
-		// 	  }
-	 //     });
 
 	});
 
