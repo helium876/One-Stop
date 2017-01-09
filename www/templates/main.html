@@ -1,20 +1,13 @@
 <ion-view view-title="OneStop">
   <ion-content>
-  <h1>Main</h1>
-	<div class="card">
+	<div class="card" ng-repeat="driver in drivers">
 		<div class="item item-text-wrap">
-	    	USER ID
+		<p>{{driver.name}}</p>
+
+		
+		<button class="button button-positive" ng-click="getData($index)">Find</button>
     	</div>
 	</div>
-		<div class="card">
-		<div class="item item-text-wrap">
-	    	USER ID
-    	</div>
-	</div>
-		<div class="card">
-		<div class="item item-text-wrap">
-	    	USER ID
-    	</div>
-	</div>
+
   </ion-content>
 </ion-view>

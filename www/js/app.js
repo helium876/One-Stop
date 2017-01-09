@@ -57,5 +57,5 @@ angular.module('oneStop', [
       }
     }
   });
-  $urlRouterProvider.otherwise('/app/map');
+  $urlRouterProvider.otherwise('/app/main');
 });
