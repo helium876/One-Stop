@@ -2,10 +2,11 @@
   <ion-content>
 	<div class="card" ng-repeat="driver in drivers">
 		<div class="item item-text-wrap">
-		<p>{{driver.name}}</p>
+			<p>Driver: {{driver.driverProfile.firstname}}</p>
+			<p>Type: {{driver.driverProfile.vehicle_type}}</p>
 
 		
-		<button class="button button-positive" ng-click="getData($index)">Find</button>
+			<button class="button button-positive" ng-click="getData($index)">Find</button>
     	</div>
 	</div>
 
